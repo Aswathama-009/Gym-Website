@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nav bar</title>
+
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <br>
+    <input type="submit" value="Add" onclick="add()">
+    <input type="submit" value="sub" onclick="sub()">
+    <input type="submit" value="mul" onclick="mul()">
+    <h1 id="result"></h1>
+    <script>
+        //document.write("hello this is my first program"); -->
+        function add(){
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var sum = num1 + num2; 
+        //document.write("The addition of two number is "+sum);
+        document.getElementsById("result").innerHTML = "The addition of two number is "+sum;
+        }
+        function sub(){
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var sub = num1 - num2; 
+            //document.write("The subtractrion of two number is "+sub);
+            document.getElementsById("result").innerHTML = "The subtraction of two number is "+sub;
+            }
+        function mul(){
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var mul = num1 * num2; 
+        //document.write("The multiplication of two number is "+mul);
+        document.getElementsById("result").innerHTML = "The multiplication of two number is "+mul;
+        }
+        </script>
+</body>
+</head>
+</html>
